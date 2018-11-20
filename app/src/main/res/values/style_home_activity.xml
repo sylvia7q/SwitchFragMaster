@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--列分隔线-->
+    <style name="style_column_line_view">
+        <item name="android:layout_width">1dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:background">@color/about_bg</item>
+    </style>
+    <!--行分隔线-->
+    <style name="style_row_line_view">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">1dp</item>
+        <item name="android:background">@color/about_bg</item>
+    </style>
+    <style name="popup_window_anim">
+        <item name="android:windowEnterAnimation">@anim/in</item>
+        <item name="android:windowExitAnimation">@anim/out</item>
+    </style>
+    <!--主界面radiobutton样式-->
+    <style name="style_activity_home_bottom_btn_view">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:button">@null</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:textColor">@drawable/color_radiobutton</item>
+    </style>
+    <!--主界面数量显示样式-->
+    <style name="style_activity_home_bottom_layout_view">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:gravity">center|top</item>
+        <item name="android:layout_weight">1</item>
+    </style>
+    <!--主界面数量显示样式-->
+    <style name="style_activity_home_bottom_tv_view">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center|top</item>
+        <item name="android:textSize">10sp</item>
+        <item name="android:layout_marginLeft">30dp</item>
+        <item name="android:background">@drawable/red_dot_bg</item>
+        <item name="android:textColor">@color/lb_whites</item>
+        <item name="android:visibility">gone</item>
+    </style>
+    <style name="style_activity_about_tv_view">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">50dp</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:layout_marginLeft">10dp</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/lb_black</item>
+    </style>
+    <!--TIMS线看板layout标题样式 -->
+    <style name="line_board_title">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">20dp</item>
+        <item name="android:textSize">@dimen/list_tv_title_size</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:clickable">true</item>
+    </style>
+    <!--TIMS线看板layout样式 -->
+    <style name="line_board_layout">
+        <item name="android:layout_width">438dp</item>
+        <item name="android:layout_height">88dp</item>
+        <item name="android:padding">3dp</item>
+        <item name="android:layout_marginTop">1dp</item>
+        <item name="android:gravity">center_vertical</item>
+    </style>
+    <!--TIMS线看板在线预警表格样式 -->
+    <style name="line_warn_title">
+        <item name="android:layout_height">15dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">10dp</item>
+    </style>
+    <!--TIMS线看板在线预警表格样式 -->
+    <style name="line_warn_content">
+        <item name="android:layout_height">15dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">8dp</item>
+    </style>
+    <!--smt_line_board_home_layout-->
+    <style name="smt_line_board_home_layout_ver">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:orientation">vertical</item>
+    </style>
+    <!--smt_line_board_home_layout-->
+    <style name="smt_line_board_home_layout_hor">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:orientation">horizontal</item>
+    </style>
+    <!--生产情况-->
+    <style name="frag_status_out_layout">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">45dp</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:gravity">center_vertical</item>
+    </style>
+    <!--生产情况-->
+    <style name="frag_status_layout">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:layout_marginLeft">5dp</item>
+    </style>
+    <!--生产情况-->
+    <style name="frag_status_tv_top">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:layout_marginLeft">5dp</item>
+        <item name="android:textSize">@dimen/product_tv_title_size</item>
+    </style>
+    <!--生产情况-->
+    <style name="frag_status_tv_bottom">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:layout_weight">0.7</item>
+        <item name="android:textColor">@color/lb_black</item>
+        <item name="android:textSize">@dimen/product_tv_content_size</item>
+    </style>
+    <!--生产情况-->
+    <style name="frag_status_tv_title">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:layout_marginLeft">5dp</item>
+        <item name="android:textColor">@color/lb_blue</item>
+    </style>
+    <!--生产情况-->
+    <style name="frag_status_image">
+        <item name="android:layout_width">20dp</item>
+        <item name="android:layout_height">20dp</item>
+        <item name="android:gravity">center</item>
+    </style>
+    <!--西文思SMT车间看板Monitoring-1 list -->
+    <style name="sevenus_production_list_monitoring_1_top">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">@color/blue</item>
+        <item name="android:gravity">center</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:ellipsize">marquee</item>
+    </style>
+    <!--西文思SMT车间看板Monitoring-1 list -->
+    <style name="sevenus_production_list_monitoring_1_bottom">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:gravity">center</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:ellipsize">marquee</item>
+    </style>
+    <!--西文思SMT车间看板Monitoring-1 -->
+    <style name="sevenus_production_tableRow_textview">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/blue</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_marginLeft">2dp</item>
+        <item name="android:layout_marginTop">5dp</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:ellipsize">marquee</item>
+    </style>
+    <!--西文思SMT车间看板Monitoring-2 list -->
+    <style name="sevenus_production_list_monitoring_2">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:textSize">20dp</item>
+        <item name="android:textColor">@color/blue</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_marginLeft">2dp</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:ellipsize">marquee</item>
+    </style>
+    <!--车间看板-->
+    <style name="workshop_tv_top">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:layout_marginLeft">5dp</item>
+        <item name="android:textColor">@color/blue</item>
+    </style>
+    <!--车间看板-->
+    <style name="workshop_tv_bottom">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:layout_marginLeft">5dp</item>
+        <item name="android:textColor">@color/lb_black</item>
+    </style>
+    <!--SMT线看板-->
+    <style name="frag_line_board_out_layout">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">45dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:gravity">center_vertical</item>
+    </style>
+    <!--SMT线看板-->
+    <style name="frag_line_board_layout">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_marginLeft">5dp</item>
+    </style>
+    <!--SMT线看板-->
+    <style name="frag_line_board_tv_top">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:layout_marginLeft">5dp</item>
+        <item name="android:textColor">@color/blue</item>
+    </style>
+    <!--SMT线看板-->
+    <style name="frag_line_board_tv_bottom">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:layout_marginLeft">5dp</item>
+        <item name="android:textColor">@color/lb_black</item>
+        <item name="android:textSize">@dimen/product_tv_content_size</item>
+    </style>
+</resources>

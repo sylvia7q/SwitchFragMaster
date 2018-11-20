@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/about_bg">
+    <com.kanban.switchfragmaster.view.TitleBarView
+        android:id="@+id/activity_workshop_titlebarview"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentTop="true">
+    </com.kanban.switchfragmaster.view.TitleBarView>
+    <RadioGroup
+        android:id="@+id/rg_workshop_viewpager_contorl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/activity_workshop_titlebarview"
+        android:gravity="center"
+        android:orientation="horizontal">
+        <RadioButton
+            android:id="@+id/rb_workshop_list_pager"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:button="@null"
+            android:drawableRight="@drawable/titlebar_selector"/>
+
+        <RadioButton
+            android:id="@+id/rb_workshop_chart_pager"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:button="@null"
+            android:drawableLeft="@drawable/titlebar_selector"/>
+    </RadioGroup>
+    <FrameLayout
+        android:id="@+id/workshop_fl_show_content"
+        android:layout_below="@+id/rg_workshop_viewpager_contorl"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <android.support.v4.view.ViewPager
+            android:id="@+id/workshop_vp_content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/whites"
+            android:descendantFocusability="blocksDescendants" />
+    </FrameLayout>
+</RelativeLayout>

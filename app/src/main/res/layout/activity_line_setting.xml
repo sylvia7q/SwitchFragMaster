@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <com.kanban.switchfragmaster.view.TitleBarView
+        android:id="@+id/activity_line_title_bar"
+        android:layout_height="40dp"
+        android:layout_width="match_parent"/>
+    <!--当前线别/已选线别显示-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="3dp"
+        android:layout_marginRight="3dp"
+        android:orientation="vertical">
+        <!--当前线别-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="80dp"
+                android:layout_height="match_parent"
+                android:gravity="left|center"
+                android:text="@string/current_line_show"
+                android:textSize="16sp"/>
+            <TextView
+                android:id="@+id/activity_line_current_line_show"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="left|center"
+                android:layout_marginLeft="2dp"
+                android:textSize="20sp"
+                android:textColor="@color/lb_red"
+                android:layout_weight="1" />
+        </LinearLayout>
+        <!--已选线别-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="80dp"
+                android:layout_height="match_parent"
+                android:gravity="left|center"
+                android:text="@string/select_line_show"
+                android:textSize="16sp"/>
+            <TextView
+                android:id="@+id/activity_line_select_line_show"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="left|center"
+                android:layout_marginLeft="2dp"
+                android:textSize="16sp"
+                android:textColor="@color/lb_red"
+                android:layout_weight="1" />
+
+        </LinearLayout>
+        <!--线别筛选-->
+        <LinearLayout
+            android:id="@+id/activity_line_search_layout"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="3dp"
+            android:background="@drawable/lb_layout">
+            <SearchView
+                android:id="@+id/activity_line_search"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:queryHint="@string/input_line_please">
+            </SearchView>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:padding="3dp"
+            android:background="@drawable/lb_layout"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="3dp"
+            android:layout_marginBottom="3dp">
+            <ListView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/activity_line_lv_line"
+                />
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>

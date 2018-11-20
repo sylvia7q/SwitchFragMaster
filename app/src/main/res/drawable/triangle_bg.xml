@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/shape"
+        android:left="-2dp"
+        android:bottom="-2dp">
+        <!-- 长方形 -->
+        <shape android:shape="rectangle">
+            <stroke android:color="#EFEFEF" android:width="1dp"/>
+        </shape>
+    </item>
+    <!--<item android:id="@+id/shape_id">
+        &lt;!&ndash; 正三角 &ndash;&gt;
+        <rotate
+            android:fromDegrees="50"
+            android:toDegrees="-50"
+            android:pivotX="-50%"
+            android:pivotY="100%">
+            <shape android:shape="rectangle">
+                <solid android:color="#EFEFEF"/>
+            </shape>
+        </rotate>
+    </item>-->
+</layer-list>

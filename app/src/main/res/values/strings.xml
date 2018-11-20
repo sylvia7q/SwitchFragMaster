@@ -1,0 +1,260 @@
+<resources>
+    <string name="app_name">SwitchFragMaster</string>
+    <!--通用-->
+    <string name="lb_prompt">提示</string>
+    <string name="lb_ok">OK</string>
+    <string name="lb_ng">NG</string>
+    <string name="error">错误</string>
+    <string name="lb_btn_confirm">确定</string>
+    <string name="lb_btn_reset">重置</string>
+    <string name="lb_btn_shut_down">关闭</string>
+    <string name="lb_btn_query">查询</string>
+    <string name="lb_btn_cancel">取消</string>
+    <string name="lb_btn_ok">是</string>
+    <string name="lb_btn_no">否</string>
+    <string name="lb_btn_change_user">切换</string>
+    <string name="lb_btn_back">返回</string>
+    <string name="lb_btn_screening">筛选</string>
+    <string name="lb_btn_exit">退出</string>
+    <string name="lb_btn_next">下一步</string>
+    <string name="lb_btn_ipqc">巡检</string>
+    <string name="lb_interface_returns_failed">后台接口返回数据为空,请重试！</string>
+    <string name="lb_line_no">线别:</string>
+    <string name="lb_station_no">工站:</string>
+    <string name="lb_data_upload">数据上传中,请稍后...</string>
+    <string name="lb_create_date">创建时间:</string>
+    <string name="lb_template">模板</string>
+    <string name="lb_table">报表</string>
+    <string name="lb_report">报表</string>
+    <string name="lb_start_date">起始时间</string>
+    <string name="lb_end_date">结束时间</string>
+    <string name="lb_input_begin_date">点击选择起始时间</string>
+    <string name="lb_input_end_date">点击选择结束时间</string>
+    <string name="lb_date">日期</string>
+    <string name="lb_btn_filter">筛选</string>
+    <string name="lb_confirm_exit">你确定要退出吗?</string>
+    <string name="again_according_to_exit_the_program">再按一次退出程序!</string>
+    <string name="loading">请稍后</string>
+    <!--弹出提示-->
+    <string name="alert_save_ok">保存成功!</string>
+    <string name="alert_add_ok">添加成功!</string>
+    <string name="alert_del_ok">删除成功!</string>
+    <!--WebserviceIP设置-->
+    <string name="webservice_ip_setting">Webservice端口IP设置</string>
+    <string name="webservice_ip">WebserviceIP地址</string>
+    <string name="webservice_ip_hint">请输入IP</string>
+    <string name="webservice_ip_error">[%1$s]IP格式不正确,应在0-255之间!</string>
+    <string name="webservice_ip_error_not_a_valid_address">[%1$s]不是有效IP地址!</string>
+    <string name="webservice_ip_error_whole">请输入完整的IP地址!</string>
+    <string name="webservice_port">Webservice端口</string>
+    <string name="webservice_port_hint">请输入端口</string>
+    <string name="webservice_port_error_whole">端口不能为空!</string>
+    <string name="webservice_sava">保存</string>
+    <string name="webservice_ip_empty">IP地址不能为空!</string>
+    <string name="webservice_port_empty">端口不能为空!</string>
+    <string name="webservice_port_isnum">端口必须为数字!</string>
+    <string name="webservice_save_success">保存成功!</string>
+    <!--socketIP设置-->
+    <string name="socket_ip_setting">Socket端口IP设置</string>
+    <string name="socket_ip">SocketIP地址</string>
+    <string name="socket_ip_hint">请输入IP</string>
+    <string name="socket_ip_error">[%1$s]IP格式不正确,应在0-255之间!</string>
+    <string name="socket_ip_error_not_a_valid_address">[%1$s]不是有效IP地址!</string>
+    <string name="socket_ip_error_whole">请输入完整的IP地址!</string>
+    <string name="socket_port">Socket端口</string>
+    <string name="socket_port_hint">请输入端口</string>
+    <string name="socket_port_error_whole">端口不能为空!</string>
+    <string name="socket_sava">保存</string>
+    <string name="socket_ip_empty">IP地址不能为空!</string>
+    <string name="socket_port_empty">端口不能为空!</string>
+    <string name="socket_port_isnum">端口必须为数字!</string>
+    <string name="socket_save_success">保存成功!</string>
+    <!--关于About-->
+    <string name="lb_about">关于</string>
+    <string name="lb_about_version"></string>
+    <string name="lb_about_url">网址:</string>
+    <string name="lb_about_tel">电话:</string>
+    <string name="lb_about_copyright">版权所有®</string>
+
+    <!--自动更新-->
+    <string name="lb_have_the_new_version_on_the_server_please_update">服务器上有新版本，请更新!</string>
+    <string name="lb_software_version_update">软件版本更新</string>
+    <string name="lb_now_update">现在更新</string>
+    <string name="lb_later_update">以后再说</string>
+    <string name="lb_software_is_the_latest_version">软件已是最新版本</string>
+    <string name="lb_the_current_version">当前版本</string>
+    <string name="lb_is_the_latest_version_no_need_to_update">已是最新版,无需更新</string>
+
+    <!--用户登录-->
+    <string name="lb_prompt_user_no">请输入用户名</string>
+    <string name="lb_prompt_user_pwd">请输入密码</string>
+    <string name="lb_user_login">用户登录</string>
+    <string name="lb_loading_data">数据正在加载中,请稍后...</string>
+    <string name="lb_prompt_user_or_pwd_error">用户名或者密码错误!</string>
+    <string name="lb_prompt_pda_unauthorized">PDA未授权,不能使用!请联系管理人员!</string>
+    <string name="lb_prompt_input_workstation">请设置工站!</string>
+    <string name="lb_prompt_input_line">请设置线别!</string>
+    <string name="lb_line_is_null_please_set_lint">线别不能为空,请先设置线别</string>
+    <string name="lb_login">登        录</string>
+    <string name="lb_settings">设置</string>
+    <item name="has_power" type="id"></item>
+
+    <!--fragment base-->
+    <string name="fragment_delete_message">删除该消息</string>
+    <string name="fragment_delete_message_confirm">删除后,将清空该消息的推送记录</string>
+    <string name="fragment_delete_chat_mag">删除</string>
+    <string name="fragment_delete_chat_more">更多</string>
+
+
+    <!--生产情况-->
+    <string name="frag_product_status_base_info">基本信息</string>
+    <string name="frag_product_status_wo">制令单</string>
+    <string name="frag_product_status_next_wo">下一个制令单</string>
+    <string name="frag_product_status_product_no">产品号</string>
+    <string name="frag_product_status_product_desc">产品描述</string>
+    <string name="frag_product_status_plan_num">计划数</string>
+    <string name="frag_product_status_panel_num">拼板数</string>
+    <string name="frag_product_status_plan_begin">计划开始时间</string>
+    <string name="frag_product_status_plan_end">计划结束时间</string>
+    <string name="frag_product_status_custom_info">客户信息</string>
+    <string name="frag_product_status_product_progress">生产进度</string>
+    <string name="frag_product_status_side">板面</string>
+    <string name="frag_product_status_product_index">生产指标</string>
+    <string name="frag_product_status_product_co">CO</string>
+    <string name="frag_product_status_product_oe">OE</string>
+    <string name="frag_product_status_product_ftq">FTQ</string>
+    <string name="frag_product_status_front">正面</string>
+    <string name="frag_product_status_reverse">反面</string>
+    <string name="exception">异常信息</string>
+    <string name="exception_type">异常类型</string>
+    <string name="nothing">无</string>
+
+    <!--线别设置-->
+    <string name="title_activity_line_setting">线别设置</string>
+    <string name="title_activity_more_line_setting">多线别设置</string>
+    <string name="get_line">获取线别信息</string>
+    <string name="no_selected_lines">没有选中线别</string>
+    <string name="select_the_line">选中线别</string>
+    <string name="loading_data">数据正在加载中...</string>
+    <string name="set_line_please">线别为空，请前往[我]->[设置]->[功能设置]中设置线别...</string>
+    <string name="set_station_please">工站为空，请前往[我]->[设置]->[功能设置]中设置工站...</string>
+    <string name="wo_is_empty">制令单为空</string>
+    <string name="no_data">暂无数据</string>
+    <string name="check_ip">请查看IP是否设置 ! </string>
+    <string name="select_line">"选中线别[%1$s]！"</string>
+    <string name="current_line_show">当前线别:</string>
+    <string name="select_line_show">已选线别:</string>
+    <string name="input_line_please">请输入线别</string>
+    <string name="line_not_null">线别不能为空，请选择线别！</string>
+    <string name="select_line_confirm">请选择一个线别，再点击确定！</string>
+    <!--工站设置-->
+    <string name="title_activity_station_setting">工站设置</string>
+    <string name="get_station">获取工站信息</string>
+    <!--物料预警信息-->
+    <string name="online_warn_device">设备</string>
+    <string name="station_location">站位</string>
+    <string name="online_warn_reel_no">料卷号</string>
+    <string name="online_warn_part_no">物料号</string>
+    <string name="online_warn_dosage">上料数量</string>
+    <string name="online_warn_feed_num">上料数量</string>
+    <string name="online_num">在线数量</string>
+    <string name="need_num">需求数量/h</string>
+    <string name="usable_date">可用时间(s)</string>
+    <string name="usable_percent">可用百分比</string>
+    <string name="part_desc">物料描述</string>
+
+
+    <!--抛料率信息-->
+    <string name="feeders_auto_num">序号</string>
+    <string name="feeders_equipment_code">设备编码</string>
+    <string name="feeders_lineNum">行号</string>
+    <string name="feeders_location">位置</string>
+    <string name="feeders_absorbNum">吸取数</string>
+    <string name="feeders_num">抛料数量</string>
+    <string name="feeders_rate">抛料率</string>
+
+    <!--线头看板-->
+    <string name="base_info">基本信息</string>
+    <string name="product_line_status">产线状态</string>
+    <string name="status">N/A</string>
+    <string name="wo_info">制令单信息</string>
+    <string name="custom">客户</string>
+    <string name="wo_num">制令单数量</string>
+    <string name="product_info">生产信息</string>
+    <string name="target_num">目标产量</string>
+    <string name="real_num">实际产量</string>
+    <string name="finish_rate">达成率</string>
+    <string name="mo_finish_rate">工单达成率</string>
+    <string name="quality_info">品质信息</string>
+    <string name="add_good_rate">累计良率</string>
+    <string name="good_rate">** Pass rate</string>
+    <string name="pass_rate">** Pass rate</string>
+    <string name="good_rate_content">良率</string>
+    <string name="reject_rate_ppm">抛料率(PPM)</string>
+
+    <!--fragboard-->
+    <string name="smt_line_monitoring">SMT线头看板</string>
+    <string name="hi_line_monitoring">HI线头看板</string>
+    <string name="warehouse_monitoring">仓库看板</string>
+    <string name="warehouse_monitoring_1">仓库看板-齐套明细</string>
+    <string name="grakon_line_monitoring">线头看板</string>
+    <string name="smt_production_workshop_kanban1">实时生产状况</string>
+    <string name="smt_production_wo_query">制令单查询</string>
+    <string name="smt_production_mo_query">工单查询</string>
+    <string name="smt_production_workshop_kanban2">SMT车间看板2</string>
+    <string name="time">时间</string>
+    <string name="line_monitoring">线看板</string>
+    <string name="gk_overall_yrt">直通率</string>
+
+    <!-- 仓库看板-->
+    <string name="title_warehouse_board">仓库看板</string>
+    <string name="title_warehouse_board1">仓库看板-齐套明细</string>
+    <string name="warehouse_order_information">制令单信息</string>
+    <string name="warehouse_team_information">用户信息</string>
+    <string name="on_production">生产中</string>
+    <string name="plan_stop_production">计划停产中</string>
+    <string name="line">线别</string>
+    <string name="line_status">产线状态</string>
+    <string name="production_line_status">产线状况</string>
+    <string name="wo">制令单</string>
+    <string name="qty">数量</string>
+    <string name="material_status">已发数量</string>
+    <string name="wo_achieving_rate">工单达成率</string>
+    <string name="is_to_prepare_fully">齐套</string>
+    <string name="not_ready_to_fully">未齐套</string>
+    <string name="total">共</string>
+    <string name="line_total">条线</string>
+    <string name="wh_line_set">仓库线别设置</string>
+    <string name="pause_auto_scroll">暂停自动滚动</string>
+    <!--西文思SMT车间看板Monitoring-1 -->
+    <string name="sevenus_production_title_tv1">SMT车间 Monitoring-1</string>
+    <string name="sevenus_production_title_tv2">生产现况</string>
+    <string name="sevenus_production_line">产线</string>
+    <string name="sevenus_production_customer">客户</string>
+    <string name="sevenus_production_product_no">产品号</string>
+    <string name="sevenus_production_mo">制令单</string>
+    <string name="sevenus_production_mo_quantity">制令单数量</string>
+    <string name="sevenus_production_mo_finishing_rate">制令单完成率</string>
+    <string name="sevenus_production_activation">稼动率</string>
+    <string name="sevenus_production_state">生产状态</string>
+    <string name="sevenus_production_scroll">暂停自动滚动</string>
+
+    <!--西文思SMT车间看板Monitoring-2 -->
+    <string name="sevenus_quality_title_tv1">SMT车间 Monitoring-2</string>
+    <string name="sevenus_quality_title_tv2">品质现况</string>
+    <string name="sevenus_quality_line">产线</string>
+    <string name="sevenus_quality_rty">RTY</string>
+    <string name="sevenus_quality_hrowing_rate1">1#抛料率</string>
+    <string name="sevenus_quality_hrowing_rate2">2#抛料率</string>
+    <string name="sevenus_quality_hrowing_rate3">3#抛料率</string>
+    <string name="sevenus_quality_state">生产状态</string>
+    <!-- 仓库-线别看板-->
+    <string name="equipment">设备</string>
+    <string name="position">站位</string>
+    <string name="pn">物料号</string>
+    <string name="total_demand">需求总量</string>
+    <string name="number_of_issued">已发数量</string>
+    <string name="has_the_number">已用数量</string>
+    <string name="pull_stock_quantity">拉存数量</string>
+    <string name="the_available_minutes">可用分钟</string>
+</resources>

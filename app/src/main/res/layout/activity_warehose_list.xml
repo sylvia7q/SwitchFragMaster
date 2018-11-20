@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    <!--产线-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="110dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:layout_weight="1.5">
+            <com.topcee.report.view.CustomCircleProgressBar
+                android:id="@+id/warehouse_pb_progressbar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:direction="top"
+                app:max_progress="100"
+                app:outside_color="#19e126"
+                app:outside_radius="40dp"
+                app:progress="0"
+                app:progress_width="4dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_weight="1">
+            <LinearLayout
+                style="@style/frag_status_layout"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/workshop_tv_top"
+                    android:layout_height="wrap_content"
+                    android:text="@string/line" />
+                <TextView
+                    android:id="@+id/tv_line"
+                    style="@style/workshop_tv_bottom" />
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/frag_status_layout"
+                android:orientation="horizontal">
+                <TextView
+                    android:id="@+id/wo_title"
+                    style="@style/workshop_tv_top"
+                    android:text="@string/wo" />
+
+                <TextView
+                    android:id="@+id/tv_wo"
+                    style="@style/workshop_tv_bottom"/>
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/frag_status_layout"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/product_tv_schedule_title"
+                    style="@style/workshop_tv_top"
+                    android:layout_height="wrap_content"
+                    android:text="@string/qty" />
+                <TextView
+                    android:id="@+id/tv_qty"
+                    style="@style/workshop_tv_bottom" />
+            </LinearLayout>
+            <LinearLayout
+                style="@style/frag_status_layout"
+                android:orientation="horizontal">
+                <TextView
+                    style="@style/workshop_tv_top"
+                    android:text="@string/material_status" />
+
+                <TextView
+                    android:id="@+id/tv_material_status"
+                    style="@style/workshop_tv_bottom" />
+            </LinearLayout>
+            <LinearLayout
+                style="@style/frag_status_layout"
+                android:orientation="horizontal">
+                <TextView
+                    style="@style/workshop_tv_top"
+                    android:text="@string/wo_achieving_rate" />
+                <TextView
+                    android:id="@+id/tv_wo_achieving_rate"
+                    style="@style/workshop_tv_bottom"/>
+            </LinearLayout>
+            <LinearLayout
+                style="@style/frag_status_layout"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_line_status_title"
+                    style="@style/workshop_tv_top"
+                    android:layout_height="wrap_content"
+                    android:text="@string/line_status" />
+                <TextView
+                    android:id="@+id/tv_line_status"
+                    style="@style/workshop_tv_bottom" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
+
+

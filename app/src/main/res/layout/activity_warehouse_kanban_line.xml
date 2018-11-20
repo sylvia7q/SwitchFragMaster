@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/about_bg">
+
+    <com.kanban.switchfragmaster.view.TitleBarView
+        android:id="@+id/warehouse_line_title_bar"
+        android:layout_height="40dp"
+        android:layout_width="match_parent"/>
+    <ListView
+        android:id="@+id/warehouse_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="@color/whites"
+        android:divider="#00000000"
+        />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:gravity="center_vertical"
+        android:layout_alignParentBottom="true">
+        <TextView
+            android:id="@+id/warehouse_line_tv_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/whites"
+            android:text="2016.3.31 14:36"
+            android:textSize="18sp"
+            android:layout_marginLeft="15dp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginRight="10dp"/>
+        <CheckBox
+            android:layout_marginLeft="15dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/pause_auto_scroll"
+            android:id="@+id/warehouse_line_cbx_pause_auto_scroll"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/warehouse_line_tv_date"
+            android:textColor="@color/whites"
+            android:visibility="invisible"
+            android:layout_toEndOf="@+id/tv_date" />
+    </RelativeLayout>
+</LinearLayout>
+

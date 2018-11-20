@@ -1,0 +1,291 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/about_bg">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <!-- 生产报表 -->
+            <RelativeLayout
+                android:id="@+id/report_rl_smt_line_board"
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:tag="report_rl_product"
+                android:gravity="center_vertical"
+                android:background="@drawable/lb_layout_selector"
+                android:focusable="true">
+
+                <ImageView
+                    android:id="@+id/iv_smt_line_board"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:contentDescription="@string/app_name"
+                    android:src="@mipmap/smt_line_board" />
+
+                <TextView
+                    android:id="@+id/tv_smt_line_board"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@+id/iv_smt_line_board"
+                    android:textSize="16dp"
+                    android:text="@string/smt_line_monitoring"/>
+            </RelativeLayout>
+            <!-- 设备报表 -->
+            <RelativeLayout
+                android:id="@+id/report_rl_hi_thread_board"
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:layout_marginTop="1dp"
+                android:gravity="center_vertical"
+                android:tag="report_rl_product"
+                android:background="@drawable/lb_layout_selector"
+                android:focusable="true">
+
+                <ImageView
+                    android:id="@+id/iv_hi_thread_board"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:contentDescription="@string/app_name"
+                    android:src="@mipmap/hi_line_board" />
+
+                <TextView
+                    android:id="@+id/tv_hi_thread_board"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@+id/iv_hi_thread_board"
+                    android:textSize="16dp"
+                    android:text="@string/hi_line_monitoring"/>
+            </RelativeLayout>
+            <!-- 抛料率报表 -->
+            <RelativeLayout
+                android:id="@+id/report_rl_warehouse_board"
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:layout_marginTop="1dp"
+                android:tag="report_rl_product"
+                android:gravity="center_vertical"
+                android:background="@drawable/lb_layout_selector"
+                android:focusable="true">
+
+                <ImageView
+                    android:id="@+id/iv_warehouse_board"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:contentDescription="@string/app_name"
+                    android:src="@mipmap/house_board" />
+
+                <TextView
+                    android:id="@+id/tv_warehouse_board"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@+id/iv_warehouse_board"
+                    android:textSize="16dp"
+                    android:text="@string/warehouse_monitoring"/>
+
+            </RelativeLayout>
+            <!-- 在线预警报表 -->
+            <RelativeLayout
+                android:id="@+id/report_rl_thread_board"
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:layout_marginTop="20dp"
+                android:tag="report_rl_product"
+                android:gravity="center_vertical"
+                android:background="@drawable/lb_layout_selector"
+                android:focusable="true">
+
+                <ImageView
+                    android:id="@+id/iv_thread_board"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:contentDescription="@string/app_name"
+                    android:src="@mipmap/line_board" />
+
+                <TextView
+                    android:id="@+id/tv_thread_board"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@+id/iv_thread_board"
+                    android:text="@string/grakon_line_monitoring"
+                    android:textSize="16dp" />
+
+            </RelativeLayout>
+            <!-- SMT车间看板1 -->
+            <RelativeLayout
+                android:id="@+id/report_rl_workshop_board"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:layout_marginTop="1dp"
+                android:tag="report_rl_product"
+                android:gravity="center_vertical"
+                android:background="@drawable/lb_layout_selector"
+                android:focusable="true">
+
+                <ImageView
+                    android:id="@+id/iv_workshop_board"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:contentDescription="@string/app_name"
+                    android:src="@mipmap/report2" />
+
+                <TextView
+                    android:id="@+id/tv_workshop_board"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@+id/iv_workshop_board"
+                    android:textSize="16dp"
+                    android:text="@string/smt_production_workshop_kanban1"/>
+                <ImageView
+                    android:id="@+id/iv_right_board"
+                    android:layout_width="15dp"
+                    android:layout_height="20dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:contentDescription="@string/app_name"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/lb_ib_right_arrow_selector" />
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/report_rl_wo_query"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:layout_marginTop="20dp"
+                android:tag="report_rl_product"
+                android:gravity="center_vertical"
+                android:background="@drawable/lb_layout_selector"
+                android:focusable="true">
+
+                <ImageView
+                    android:id="@+id/iv_wo_query"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:contentDescription="@string/app_name"
+                    android:src="@mipmap/set_wo" />
+
+                <TextView
+                    android:id="@+id/tv_wo_query"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@+id/iv_wo_query"
+                    android:textSize="16dp"
+                    android:text="@string/smt_production_wo_query"/>
+                <ImageView
+                    android:id="@+id/iv_right_wo_query"
+                    android:layout_width="15dp"
+                    android:layout_height="20dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:contentDescription="@string/app_name"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/lb_ib_right_arrow_selector" />
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/report_rl_mo_query"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:layout_marginTop="1dp"
+                android:tag="report_rl_product"
+                android:gravity="center_vertical"
+                android:background="@drawable/lb_layout_selector"
+                android:focusable="true">
+
+                <ImageView
+                    android:id="@+id/iv_mo_query"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:contentDescription="@string/app_name"
+                    android:src="@mipmap/mo" />
+
+                <TextView
+                    android:id="@+id/tv_mo_query"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@+id/iv_mo_query"
+                    android:textSize="16dp"
+                    android:text="@string/smt_production_mo_query"/>
+                <ImageView
+                    android:id="@+id/iv_right_mo_query"
+                    android:layout_width="15dp"
+                    android:layout_height="20dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:contentDescription="@string/app_name"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/lb_ib_right_arrow_selector" />
+            </RelativeLayout>
+            <!-- SMT车间看板2 -->
+            <RelativeLayout
+                android:id="@+id/report_rl_workshop_board2"
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:layout_marginTop="1dp"
+                android:tag="report_rl_product"
+                android:gravity="center_vertical"
+                android:background="@drawable/lb_layout_selector"
+                android:focusable="true">
+
+                <ImageView
+                    android:id="@+id/iv_workshop_board2"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:contentDescription="@string/app_name"
+                    android:src="@mipmap/smt_workshop_board" />
+
+                <TextView
+                    android:id="@+id/tv_workshop_board2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@+id/iv_workshop_board2"
+                    android:textSize="16dp"
+                    android:text="@string/smt_production_workshop_kanban2"/>
+
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</FrameLayout>

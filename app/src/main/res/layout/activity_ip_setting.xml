@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/about_bg">
+    <com.kanban.switchfragmaster.view.TitleBarView
+        android:id="@+id/activity_ip_setting_titlebarview"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentTop="true"
+        android:background="@color/title_bg">
+    </com.kanban.switchfragmaster.view.TitleBarView>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/activity_ip_setting_titlebarview">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <!-- webserviceip设置 -->
+            <LinearLayout
+                android:id="@+id/activity_ip_setting_ll_webservice_ip"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:tag="report_rl_product"
+                android:gravity="center_vertical"
+                android:background="@drawable/lb_layout_selector">
+                <ImageView
+                    android:id="@+id/iv_webservice_ip"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:contentDescription="@string/app_name"
+                    android:src="@mipmap/ic_web_port" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="10dp"
+                    android:textSize="16dp"
+                    android:text="@string/webservice_ip_setting" />
+
+            </LinearLayout>
+            <!-- socketip设置 -->
+            <LinearLayout
+                android:id="@+id/activity_ip_setting_ll_socket_ip"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:layout_marginTop="0.5dp"
+                android:tag="report_rl_product"
+                android:gravity="center_vertical"
+                android:background="@drawable/lb_layout_selector">
+                <ImageView
+                    android:id="@+id/iv_socket_ip"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:contentDescription="@string/app_name"
+                    android:src="@mipmap/ic_socket_port" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="10dp"
+                    android:textSize="16dp"
+                    android:text="@string/socket_ip_setting" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

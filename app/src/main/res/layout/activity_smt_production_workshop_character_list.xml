@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/about_bg"
+    android:orientation="vertical">
+    <!--产线-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:id="@+id/line_no_title"
+            style="@style/frag_status_tv_title"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:text="@string/sevenus_production_line" />
+
+        <TextView
+            android:id="@+id/line_no"
+            style="@style/frag_status_tv_title"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/line_no_title"
+            android:text="@string/sevenus_production_line"
+            android:textColor="@color/black" />
+        <!--生产状况-->
+        <TextView
+            android:id="@+id/production_state"
+            style="@style/frag_status_tv_title"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="5dp"
+            android:text="@string/sevenus_production_state"
+            android:textColor="@color/blue" />
+    </RelativeLayout>
+    <!--产线信息-->
+    <LinearLayout
+        style="@style/frag_status_out_layout"
+        android:background="@color/lb_whites">
+        <!--产品号-->
+        <LinearLayout
+            style="@style/frag_status_layout"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:background="@mipmap/product_no" />
+
+            <LinearLayout
+                style="@style/frag_status_layout"
+                android:layout_width="126dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/product_tv_schedule_title"
+                    style="@style/workshop_tv_top"
+                    android:text="@string/sevenus_quality_rty" />
+
+                <TextView
+                    android:id="@+id/rty"
+                    style="@style/workshop_tv_bottom" />
+            </LinearLayout>
+        </LinearLayout>
+        <!--制令单-->
+        <LinearLayout
+            style="@style/frag_status_layout"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:background="@mipmap/edit_normal" />
+
+            <LinearLayout
+                style="@style/frag_status_layout"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/product_tv_side_title"
+                    style="@style/workshop_tv_top"
+                    android:text="@string/sevenus_quality_hrowing_rate1" />
+
+                <TextView
+                    android:id="@+id/hrowing_rate1"
+                    style="@style/workshop_tv_bottom" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/frag_status_out_layout"
+        android:background="@color/lb_whites">
+        <!--生产进度-->
+        <LinearLayout
+            style="@style/frag_status_layout"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:background="@mipmap/edit_normal" />
+
+            <LinearLayout
+                style="@style/frag_status_layout"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/workshop_tv_top"
+                    android:text="@string/sevenus_quality_hrowing_rate2" />
+
+                <TextView
+                    android:id="@+id/hrowing_rate2"
+                    style="@style/workshop_tv_bottom" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <!--正反面-->
+        <LinearLayout
+            style="@style/frag_status_layout"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:background="@mipmap/edit_normal" />
+
+            <LinearLayout
+                style="@style/frag_status_layout"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/workshop_tv_top"
+                    android:text="@string/sevenus_quality_hrowing_rate3" />
+
+                <TextView
+                    android:id="@+id/hrowing_rate3"
+                    style="@style/workshop_tv_bottom" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

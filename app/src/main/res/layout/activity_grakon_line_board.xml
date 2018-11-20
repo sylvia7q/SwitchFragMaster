@@ -1,0 +1,549 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/about_bg">
+    <com.kanban.switchfragmaster.view.TitleBarView
+        android:id="@+id/activity_grakon_line_board_titlebarview"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_alignParentTop="true"
+        android:background="@color/title_bg">
+    </com.kanban.switchfragmaster.view.TitleBarView>
+    <LinearLayout
+        android:id="@+id/ll_production"
+        android:layout_below="@+id/activity_grakon_line_board_titlebarview"
+        android:background="@color/lb_whites"
+        style="@style/frag_line_board_out_layout">
+        <TextView
+            android:id="@+id/grakon_tv_line_status_title"
+            style="@style/frag_line_board_tv_top"
+            android:text="@string/product_line_status" />
+        <LinearLayout
+            style="@style/frag_line_board_tv_bottom">
+            <TextView
+                android:id="@+id/grakon_tv_line_status"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/lb_dark_blue"
+                android:textSize="16sp"
+                android:background="@color/blue"
+                android:text="@string/status"/>
+        </LinearLayout>
+
+    </LinearLayout>
+    <ScrollView
+        android:id="@+id/sv_main"
+        android:layout_below="@+id/ll_production"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    style="@style/frag_status_tv_title"
+                    android:text="@string/wo_info"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:gravity="center_vertical"
+                >
+                <LinearLayout
+                    android:background="@color/lb_whites"
+                    style="@style/frag_line_board_out_layout">
+
+                    <ImageView
+                        style="@style/frag_status_image"
+                        android:layout_marginLeft="5dp"
+                        android:background="@mipmap/custom" />
+                    <LinearLayout
+                        style="@style/frag_line_board_layout"
+                        >
+
+                        <TextView
+                            android:id="@+id/grakon_tv_custom_title"
+                            style="@style/frag_line_board_tv_top"
+                            android:text="@string/custom" />
+                        <TextView
+                            android:id="@+id/grakon_tv_custom"
+                            style="@style/frag_line_board_tv_bottom"></TextView>
+                    </LinearLayout>
+                </LinearLayout>
+                
+                <LinearLayout
+                    android:background="@color/lb_whites"
+                    style="@style/frag_line_board_out_layout">
+
+                    <ImageView
+                        style="@style/frag_status_image"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:background="@mipmap/product_no" />
+                    <LinearLayout
+                        style="@style/frag_line_board_layout"
+                        >
+                        <TextView
+                            android:id="@+id/grakon_tv_product_no_title"
+                            style="@style/frag_line_board_tv_top"
+                            android:text="@string/frag_product_status_product_no" />
+                        <TextView
+                            android:id="@+id/grakon_tv_product_no"
+                            style="@style/frag_line_board_tv_bottom"/>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:gravity="center_vertical"
+                >
+                <LinearLayout
+                    android:background="@color/lb_whites"
+                    style="@style/frag_line_board_out_layout">
+
+                    <ImageView
+                        style="@style/frag_status_image"
+                        android:layout_marginLeft="5dp"
+                        android:background="@mipmap/wo" />
+                    <LinearLayout
+                        style="@style/frag_line_board_layout"
+                        >
+
+                        <TextView
+                            android:id="@+id/grakon_tv_wo_title"
+                            style="@style/frag_line_board_tv_top"
+                            android:text="@string/frag_product_status_wo" />
+                        <TextView
+                            android:id="@+id/grakon_tv_wo"
+                            style="@style/frag_line_board_tv_bottom"></TextView>
+                    </LinearLayout>
+                </LinearLayout>
+                
+                <LinearLayout
+                    android:background="@color/lb_whites"
+                    style="@style/frag_line_board_out_layout">
+
+                    <ImageView
+                        style="@style/frag_status_image"
+                        android:layout_marginLeft="5dp"
+                        android:background="@mipmap/set_wo_num" />
+                    <LinearLayout
+                        style="@style/frag_line_board_layout"
+                        >
+
+                        <TextView
+                            android:id="@+id/grakon_tv_wo_num_title"
+                            style="@style/frag_line_board_tv_top"
+                            android:text="@string/wo_num" />
+                        <TextView
+                            android:id="@+id/grakon_tv_wo_num"
+                            style="@style/frag_line_board_tv_bottom"></TextView>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    style="@style/frag_status_tv_title"
+                    android:text="@string/product_info"/>
+                <TextView
+                    android:id="@+id/grakon_tv_shift"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="5dp"
+                    android:gravity="center_vertical"
+                    android:textColor="@color/black"
+                    android:text=""/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:gravity="center_vertical"
+                >
+                <LinearLayout
+                    android:background="@color/lb_whites"
+                    style="@style/frag_line_board_out_layout">
+
+                    <ImageView
+                        style="@style/frag_status_image"
+                        android:layout_marginLeft="5dp"
+                        android:background="@mipmap/plan" />
+                    <LinearLayout
+                        style="@style/frag_line_board_layout"
+                        >
+
+                        <TextView
+                            android:id="@+id/grakon_tv_target_num_title"
+                            style="@style/frag_line_board_tv_top"
+                            android:text="@string/target_num" />
+                        <TextView
+                            android:id="@+id/grakon_tv_target_num"
+                            style="@style/frag_line_board_tv_bottom"
+                            android:textColor="@color/blue"/>
+                    </LinearLayout>
+                </LinearLayout>
+                
+                <LinearLayout
+                    android:background="@color/lb_whites"
+                    style="@style/frag_line_board_out_layout">
+
+                    <ImageView
+                        style="@style/frag_status_image"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:background="@mipmap/product_no" />
+                    <LinearLayout
+                        style="@style/frag_line_board_layout"
+                        >
+                        <TextView
+                            android:id="@+id/grakon_tv_real_num_title"
+                            style="@style/frag_line_board_tv_top"
+                            android:text="@string/real_num" />
+                        <TextView
+                            android:id="@+id/grakon_tv_real_num"
+                            style="@style/frag_line_board_tv_bottom"
+                            android:textColor="@color/blue"/>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:gravity="center_vertical"
+                >
+                <LinearLayout
+                    android:background="@color/lb_whites"
+                    style="@style/frag_line_board_out_layout">
+
+                    <ImageView
+                        style="@style/frag_status_image"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:background="@mipmap/set_wo_num2" />
+                    <LinearLayout
+                        style="@style/frag_line_board_layout"
+                        >
+
+                        <TextView
+                            android:id="@+id/grakon_tv_finish_rate_title"
+                            style="@style/frag_line_board_tv_top"
+                            android:text="@string/finish_rate" />
+                        <TextView
+                            android:id="@+id/grakon_tv_finish_rate"
+                            style="@style/frag_line_board_tv_bottom"></TextView>
+                    </LinearLayout>
+                </LinearLayout>
+                
+                <LinearLayout
+                    android:background="@color/lb_whites"
+                    style="@style/frag_line_board_out_layout">
+
+                    <ImageView
+                        style="@style/frag_status_image"
+                        android:layout_marginLeft="5dp"
+                        android:background="@mipmap/report2" />
+                    <LinearLayout
+                        style="@style/frag_line_board_layout"
+                        >
+
+                        <TextView
+                            android:id="@+id/grakon_tv_mo_finish_rate_title"
+                            style="@style/frag_line_board_tv_top"
+                            android:text="@string/mo_finish_rate" />
+                        <TextView
+                            android:id="@+id/grakon_tv_mo_finish_rate"
+                            style="@style/frag_line_board_tv_bottom"></TextView>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    style="@style/frag_status_tv_title"
+                    android:text="@string/quality_info"/>
+            </LinearLayout>
+            <LinearLayout
+                style="@style/frag_line_board_layout"
+                android:layout_marginLeft="0dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="1dp"
+                android:orientation="horizontal"
+                android:background="#78a5f0">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="#9ecce6"
+                    android:gravity="center"
+                    android:layout_weight="1"/>
+                
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="Input"/>
+                
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="Output"/>
+                
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="Yield"/>
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/grakon_ll_over"
+                style="@style/frag_line_board_layout"
+                android:layout_marginLeft="0dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="1dp"
+                android:orientation="horizontal"
+                android:background="#90f3c779">
+                <TextView
+                    android:id="@+id/grakon_tv_overall_yrt"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:layout_weight="1"
+                    android:background="#9ecce6"
+                    android:text="Overall YRT"/>
+                
+                <TextView
+                    android:id="@+id/grakon_tv_input"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:layout_weight="1"/>
+                
+                <TextView
+                    android:id="@+id/grakon_tv_output"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:layout_weight="1"/>
+                
+                <TextView
+                    android:id="@+id/grakon_tv_yield"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:layout_weight="1"/>
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/grakon_ll_station1"
+                style="@style/frag_line_board_layout"
+                android:layout_marginLeft="0dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="1dp"
+                android:orientation="horizontal"
+                android:background="#90f3c779">
+                <TextView
+                    android:id="@+id/grakon_tv_station1"
+                    android:text="** Station1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="#9ecce6"
+                    android:gravity="center"
+                    android:layout_weight="1"/>
+                
+                <TextView
+                    android:id="@+id/grakon_tv_input1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:layout_weight="1"/>
+                
+                <TextView
+                    android:id="@+id/grakon_tv_output1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:layout_weight="1"/>
+                
+                <TextView
+                    android:id="@+id/grakon_tv_yield1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"/>
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/grakon_ll_station2"
+                style="@style/frag_line_board_layout"
+                android:layout_marginLeft="0dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="1dp"
+                android:orientation="horizontal"
+                android:background="#90f3c779">
+                <TextView
+                    android:id="@+id/grakon_tv_station2"
+                    android:text="** Station2"
+                    android:background="#9ecce6"
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"/>
+                
+
+                <TextView
+                    android:id="@+id/grakon_tv_input2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center" />
+                
+                <TextView
+                    android:id="@+id/grakon_tv_output2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:layout_weight="1"/>
+                
+                <TextView
+                    android:id="@+id/grakon_tv_yield2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:layout_weight="1"/>
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/grakon_ll_station3"
+                style="@style/frag_line_board_layout"
+                android:layout_marginLeft="0dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="1dp"
+                android:orientation="horizontal"
+                android:background="#90f3c779">
+                <TextView
+                    android:id="@+id/grakon_tv_station3"
+                    android:text="** Station3"
+                    android:background="#9ecce6"
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"/>
+                
+                <TextView
+                    android:id="@+id/grakon_tv_input3"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:layout_weight="1"/>
+                
+                <TextView
+                    android:id="@+id/grakon_tv_output3"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:layout_weight="1"/>
+                
+                <TextView
+                    android:id="@+id/grakon_tv_yield3"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:layout_weight="1"/>
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/grakon_ll_station4"
+                style="@style/frag_line_board_layout"
+                android:layout_height="40dp"
+                android:layout_marginTop="1dp"
+                android:layout_marginLeft="0dp"
+                android:orientation="horizontal"
+                android:background="#90f3c779">
+                <TextView
+                    android:id="@+id/grakon_tv_station4"
+                    android:text="** Station4"
+                    android:background="#9ecce6"
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"/>
+                
+                <TextView
+                    android:id="@+id/grakon_tv_input4"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:layout_weight="1"/>
+                
+                <TextView
+                    android:id="@+id/grakon_tv_output4"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:layout_weight="1"/>
+                
+                <TextView
+                    android:id="@+id/grakon_tv_yield4"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:layout_weight="1"/>
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/grakon_ll_station5"
+                style="@style/frag_line_board_layout"
+                android:layout_height="40dp"
+                android:layout_marginLeft="0dp"
+                android:layout_marginTop="1dp"
+                android:layout_marginBottom="5dp"
+                android:orientation="horizontal"
+                android:background="#90f3c779">
+                <TextView
+                    android:id="@+id/grakon_tv_station5"
+                    android:text="** Station5"
+                    android:background="#9ecce6"
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"/>
+                
+                <TextView
+                    android:id="@+id/grakon_tv_input5"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:layout_weight="1"/>
+                
+                <TextView
+                    android:id="@+id/grakon_tv_output5"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:layout_weight="1"/>
+                
+                <TextView
+                    android:id="@+id/grakon_tv_yield5"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:layout_weight="1"/>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+    <TextView
+        android:id="@+id/grakon_tv_date"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="5dp"
+        android:gravity="center_vertical"
+        android:textColor="@color/black"/>
+</RelativeLayout>

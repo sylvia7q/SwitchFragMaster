@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:id="@+id/online_warn_bg_layout"
+            android:layout_width="match_parent"
+            android:layout_height="15dp"
+            android:orientation="horizontal">
+            <!--设备-->
+            <TextView
+                android:id="@+id/online_warn_device"
+                android:layout_width="30dp"
+                style="@style/line_warn_content"
+                android:text="@string/online_warn_device" />
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                />
+            <!--站位-->
+            <TextView
+                android:id="@+id/station_location"
+                android:layout_width="40dp"
+                style="@style/line_warn_content"
+                android:text="@string/station_location"/>
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                />
+            <!--料卷号-->
+            <TextView
+                android:id="@+id/online_warn_reel_no"
+                android:layout_width="70dp"
+                style="@style/line_warn_content"
+                android:text="@string/online_warn_reel_no" />
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                />
+            <!--物料号-->
+            <TextView
+                android:id="@+id/online_warn_part_no"
+                android:layout_width="100dp"
+                style="@style/line_warn_content"
+                android:text="@string/online_warn_part_no"/>
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                />
+            <!--用量-->
+            <TextView
+                android:id="@+id/dosage_tv"
+                android:layout_width="30dp"
+                style="@style/line_warn_content"
+                android:text="@string/online_warn_dosage"/>
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                />
+            <!--上料数量-->
+            <TextView
+                android:id="@+id/online_warn_feed_num"
+                android:layout_width="40dp"
+                style="@style/line_warn_content"
+                android:text="@string/online_warn_feed_num" />
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                />
+            <!--在线数量-->
+            <TextView
+                android:id="@+id/online_num"
+                android:layout_width="40dp"
+                style="@style/line_warn_content"
+                android:text="@string/online_num"/>
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                />
+            <!--需求数量-->
+            <TextView
+                android:id="@+id/need_num"
+                android:layout_width="50dp"
+                style="@style/line_warn_content"
+                android:text="@string/need_num" />
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                />
+            <!--可用时间s-->
+            <TextView
+                android:id="@+id/usable_date"
+                android:layout_width="60dp"
+                style="@style/line_warn_content"
+                android:text="@string/usable_date" />
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                />
+            <!--可用百分比-->
+            <TextView
+                android:id="@+id/usable_percent"
+                android:layout_width="50dp"
+                style="@style/line_warn_content"
+                android:text="@string/usable_percent"/>
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                />
+            <!--物料描述-->
+            <TextView
+                android:id="@+id/part_desc"
+                android:layout_width="150dp"
+                style="@style/line_warn_content"
+                android:gravity="center|left"
+                android:text="@string/part_desc" />
+        </LinearLayout>
+    </HorizontalScrollView>
+
+
+</LinearLayout>

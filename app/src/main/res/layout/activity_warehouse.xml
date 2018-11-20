@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/about_bg">
+    <com.kanban.switchfragmaster.view.TitleBarView
+        android:id="@+id/activity_warehouse_titlebarview"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentTop="true">
+    </com.kanban.switchfragmaster.view.TitleBarView>
+    <LinearLayout
+        android:id="@+id/ll_wo_info"
+        android:layout_below="@+id/activity_warehouse_titlebarview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            style="@style/frag_status_tv_title"
+            android:text="@string/wo_info"/>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/ll_on_production"
+        android:layout_below="@+id/ll_wo_info"
+        android:background="@color/lb_whites"
+        style="@style/frag_status_out_layout"
+        android:layout_height="35dp">
+
+        <ImageView
+            style="@style/frag_status_image"
+            android:layout_marginLeft="5dp"
+            android:background="@mipmap/product_no" />
+        <LinearLayout
+            style="@style/frag_status_layout"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/activity_warehouse_kanban_tv_on_production_title"
+                style="@style/frag_status_tv_top"
+                android:text="@string/on_production" />
+            <TextView
+                android:id="@+id/activity_warehouse_kanban_tv_on_production"
+                style="@style/frag_status_tv_bottom"
+                android:textColor="@color/lb_dark_blue"
+                android:textSize="16sp"
+                android:text="@string/status"/>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/ll_plan_stop_product"
+        android:layout_below="@+id/ll_on_production"
+        android:background="@color/lb_whites"
+        style="@style/frag_status_out_layout"
+        android:layout_height="35dp">
+
+        <ImageView
+            style="@style/frag_status_image"
+            android:layout_marginLeft="5dp"
+            android:background="@mipmap/product_no" />
+        <LinearLayout
+            style="@style/frag_status_layout"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/activity_warehouse_kanban_tv_plan_stop_production_title"
+                style="@style/frag_status_tv_top"
+                android:text="@string/plan_stop_production" />
+            <TextView
+                android:id="@+id/activity_warehouse_kanban_tv_plan_stop_production"
+                style="@style/frag_status_tv_bottom"
+                android:textColor="@color/lb_dark_blue"
+                android:textSize="16sp"
+                android:text="@string/status"/>
+        </LinearLayout>
+    </LinearLayout>
+    <RadioGroup
+        android:id="@+id/rg_warehouse_viewpager_contorl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ll_plan_stop_product"
+        android:gravity="center"
+        android:orientation="horizontal">
+        <RadioButton
+            android:id="@+id/rb_warehouse_list_pager"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:button="@null"
+            android:drawableRight="@drawable/titlebar_selector"/>
+
+        <RadioButton
+            android:id="@+id/rb_warehouse_chart_pager"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:button="@null"
+            android:drawableLeft="@drawable/titlebar_selector"/>
+    </RadioGroup>
+    <FrameLayout
+        android:id="@+id/warehouse_fl_show_content"
+        android:layout_below="@+id/rg_warehouse_viewpager_contorl"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <android.support.v4.view.ViewPager
+            android:id="@+id/warehouse_vp_content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/whites"
+            android:descendantFocusability="blocksDescendants" />
+    </FrameLayout>
+</RelativeLayout>

@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@color/about_bg">
+    <!--产线-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:id="@+id/tv_sPartNo_title"
+            style="@style/frag_status_tv_title"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:text="@string/pn"/>
+        <TextView
+            android:id="@+id/sPartNo"
+            android:layout_toRightOf="@+id/tv_sPartNo_title"
+            android:layout_centerVertical="true"
+            style="@style/frag_status_tv_title"
+            android:text="@string/pn"
+            android:textColor="@color/black" />
+        <!--生产状况-->
+        <TextView
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            style="@style/frag_status_tv_title"
+            android:layout_marginRight="5dp"
+            android:text="@string/equipment"
+            android:layout_toLeftOf="@+id/sEquipmentId"
+            />
+        <TextView
+            android:id="@+id/sEquipmentId"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            style="@style/frag_status_tv_title"
+            android:layout_marginRight="5dp"
+            />
+    </RelativeLayout>
+    <!--产线信息-->
+    <LinearLayout
+        android:background="@color/lb_whites"
+        style="@style/frag_status_out_layout">
+        <!--制令单-->
+        <LinearLayout
+            style="@style/frag_status_layout"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:background="@mipmap/set_wo_num" />
+            <LinearLayout
+                style="@style/frag_status_layout"
+                android:orientation="vertical">
+                <TextView
+                    android:id="@+id/product_tv_side_title"
+                    style="@style/workshop_tv_top"
+                    android:text="@string/position" />
+
+                <TextView
+                    android:id="@+id/sStration"
+                    android:text="500"
+                    style="@style/workshop_tv_bottom"/>
+            </LinearLayout>
+        </LinearLayout>
+        <View style="@style/style_column_line_view"/>
+        <!--生产进度-->
+        <LinearLayout
+            style="@style/frag_status_layout"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:background="@mipmap/set_wo" />
+            <LinearLayout
+                style="@style/frag_status_layout"
+                android:orientation="vertical">
+                <TextView
+                    style="@style/workshop_tv_top"
+                    android:text="@string/total_demand" />
+
+                <TextView
+                    android:id="@+id/sTotalNO"
+                    android:text="@string/total_demand"
+                    style="@style/workshop_tv_bottom" />
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+    <LinearLayout
+        android:background="@color/lb_whites"
+        style="@style/frag_status_out_layout">
+        <!--正反面-->
+        <LinearLayout
+            style="@style/frag_status_layout"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:background="@mipmap/edit_normal" />
+            <LinearLayout
+                style="@style/frag_status_layout"
+                android:orientation="vertical">
+                <TextView
+                    style="@style/workshop_tv_top"
+                    android:text="@string/material_status" />
+                <TextView
+                    android:id="@+id/sPartStatus"
+                    android:text="50%"
+                    style="@style/workshop_tv_bottom"/>
+            </LinearLayout>
+        </LinearLayout>
+        <View style="@style/style_column_line_view"/>
+
+        <!--生产进度-->
+        <LinearLayout
+            style="@style/frag_status_layout"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:background="@mipmap/set_wo" />
+            <LinearLayout
+                style="@style/frag_status_layout"
+                android:orientation="vertical">
+                <TextView
+                    style="@style/workshop_tv_top"
+                    android:text="@string/has_the_number" />
+
+                <TextView
+                    android:id="@+id/sQty"
+                    android:text="@string/has_the_number"
+                    style="@style/workshop_tv_bottom" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:background="@color/lb_whites"
+        style="@style/frag_status_out_layout">
+        <!--正反面-->
+        <LinearLayout
+            style="@style/frag_status_layout"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:background="@mipmap/edit_normal" />
+            <LinearLayout
+                style="@style/frag_status_layout"
+                android:orientation="vertical">
+                <TextView
+                    style="@style/workshop_tv_top"
+                    android:text="@string/pull_stock_quantity" />
+                <TextView
+                    android:id="@+id/sQuantity"
+                    android:text="50%"
+                    style="@style/workshop_tv_bottom"/>
+            </LinearLayout>
+        </LinearLayout>
+        <View style="@style/style_column_line_view"/>
+        <!--正反面-->
+        <LinearLayout
+            style="@style/frag_status_layout"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:background="@mipmap/edit_normal" />
+            <LinearLayout
+                style="@style/frag_status_layout"
+                android:orientation="vertical">
+                <TextView
+                    style="@style/workshop_tv_top"
+                    android:text="@string/the_available_minutes" />
+                <TextView
+                    android:id="@+id/sMinutes"
+                    android:text="50%"
+                    style="@style/workshop_tv_bottom"/>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
+
+

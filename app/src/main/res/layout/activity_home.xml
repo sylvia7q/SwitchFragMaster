@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.kanban.switchfragmaster.view.TitleBarView
+        android:id="@+id/titlebarview"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentTop="true"></com.kanban.switchfragmaster.view.TitleBarView>
+
+    <FrameLayout
+        android:id="@+id/fl_show_content"
+        android:layout_above="@+id/rg_home_viewpager_contorl"
+        android:layout_below="@+id/titlebarview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true">
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/vp_content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/about_bg"
+            android:descendantFocusability="blocksDescendants" />
+    </FrameLayout>
+
+    <View
+        android:id="@+id/activity_home_bottom_line_layout"
+        android:layout_above="@+id/rg_home_viewpager_contorl"
+        style="@style/style_row_line_view" />
+
+    <RadioGroup
+        android:id="@+id/rg_home_viewpager_contorl"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:layout_alignParentBottom="true"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/rb_message_pager"
+            style="@style/style_activity_home_bottom_btn_view"
+            android:text="消息"
+            android:checked="true"
+            android:drawableTop="@drawable/bottombar_message" />
+        <!--<RadioButton
+            android:id="@+id/rb_report_pager"
+            style="@style/style_activity_home_bottom_btn_view"
+            android:text="报表"
+            android:drawableTop="@drawable/bottombar_report" />-->
+
+        <RadioButton
+            android:id="@+id/rb_status_pager"
+            style="@style/style_activity_home_bottom_btn_view"
+            android:text="生产状况"
+            android:drawableTop="@drawable/bottombar_status" />
+
+        <RadioButton
+            android:id="@+id/rb_myself_pager"
+            style="@style/style_activity_home_bottom_btn_view"
+            android:text="我"
+            android:drawableTop="@drawable/bottombar_myself" />
+    </RadioGroup>
+
+    <LinearLayout
+        android:id="@+id/fl_radio"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true">
+
+        <LinearLayout style="@style/style_activity_home_bottom_layout_view">
+
+            <TextView
+                android:id="@+id/activity_home_bottom_tv_message_notice_count"
+                style="@style/style_activity_home_bottom_tv_view" />
+        </LinearLayout>
+
+        <LinearLayout style="@style/style_activity_home_bottom_layout_view">
+
+            <TextView
+                android:id="@+id/activity_home_bottom_tv_report_notice_count"
+                style="@style/style_activity_home_bottom_tv_view" />
+        </LinearLayout>
+
+        <LinearLayout style="@style/style_activity_home_bottom_layout_view">
+
+            <TextView
+                android:id="@+id/activity_home_bottom_tv_product_notice_count"
+                style="@style/style_activity_home_bottom_tv_view" />
+        </LinearLayout>
+
+        <LinearLayout style="@style/style_activity_home_bottom_layout_view">
+
+            <TextView
+                android:id="@+id/activity_home_bottom_tv_myself_notice_count"
+                style="@style/style_activity_home_bottom_tv_view" />
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

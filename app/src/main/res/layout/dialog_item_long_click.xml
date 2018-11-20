@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="15dp">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:gravity="center_vertical"
+            android:textSize="16sp"
+            android:textColor="@color/lb_black"
+            android:text="@string/fragment_delete_message_confirm"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_alignParentBottom="true"
+            android:gravity="center_vertical|right">
+            <TextView
+                android:id="@+id/dialog_frag_item_delete_cancel"
+                android:layout_width="50dp"
+                android:layout_height="40dp"
+                android:gravity="center"
+                android:textSize="16sp"
+                android:background="@drawable/lb_layout_selector"
+                android:text="@string/lb_btn_cancel"/>
+            <TextView
+                android:id="@+id/dialog_frag_item_delete_confirm"
+                android:layout_width="50dp"
+                android:layout_height="40dp"
+                android:textColor="@color/red"
+                android:gravity="center"
+                android:textSize="16sp"
+                android:background="@drawable/lb_layout_selector"
+                android:layout_marginLeft="20dp"
+                android:text="@string/lb_btn_confirm"/>
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>

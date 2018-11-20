@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="45dp"
+    android:id="@+id/table_info_list_item_layout">
+
+    <TextView
+        android:id="@+id/FRAGMENT_PRODUCT_TABLE_INFO_TIME"
+        android:layout_width="100dp"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:textSize="@dimen/list_tv_content_size"
+        android:gravity="center"/>
+    <TextView
+        android:id="@+id/FRAGMENT_PRODUCT_TABLE_INFO_REALLY"
+        android:layout_width="100dp"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:textSize="@dimen/list_tv_content_size"
+        android:gravity="center"/>
+    <TextView
+        android:id="@+id/FRAGMENT_PRODUCT_TABLE_INFO_STANDAND"
+        android:layout_width="100dp"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:textSize="@dimen/list_tv_content_size"
+        android:gravity="center"/>
+</RelativeLayout>

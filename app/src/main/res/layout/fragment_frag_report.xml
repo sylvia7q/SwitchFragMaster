@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/about_bg">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <!-- 生产报表 -->
+            <RelativeLayout
+                android:id="@+id/report_rl_product"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:tag="report_rl_product"
+                android:gravity="center_vertical"
+                android:background="@drawable/lb_layout_selector"
+                android:focusable="true">
+
+                <ImageView
+                    android:id="@+id/iv_product"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:contentDescription="@string/app_name"
+                    android:src="@mipmap/report2" />
+
+                <TextView
+                    android:id="@+id/tv_product"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@+id/iv_product"
+                    android:textSize="16dp"
+                    android:text="生产报表"/>
+            </RelativeLayout>
+            <!-- 设备报表 -->
+            <RelativeLayout
+                android:id="@+id/report_rl_equipement"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:layout_marginTop="1dp"
+                android:gravity="center_vertical"
+                android:tag="report_rl_product"
+                android:background="@drawable/lb_layout_selector"
+                android:focusable="true">
+
+                <ImageView
+                    android:id="@+id/iv_equipement"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:contentDescription="@string/app_name"
+                    android:src="@mipmap/report3" />
+
+                <TextView
+                    android:id="@+id/tv_equipement"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@+id/iv_equipement"
+                    android:textSize="16dp"
+                    android:text="设备报表"/>
+            </RelativeLayout>
+            <!-- 抛料率报表 -->
+            <RelativeLayout
+                android:id="@+id/report_rl_feeder_material"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:layout_marginTop="1dp"
+                android:tag="report_rl_product"
+                android:gravity="center_vertical"
+                android:background="@drawable/lb_layout_selector"
+                android:focusable="true">
+
+                <ImageView
+                    android:id="@+id/iv_feeder_material"
+                    android:layout_width="30dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:contentDescription="@string/app_name"
+                    android:src="@mipmap/report1" />
+
+                <TextView
+                    android:id="@+id/tv_feeder_material"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@+id/iv_feeder_material"
+                    android:textSize="16dp"
+                    android:text="供料器报表"/>
+
+            </RelativeLayout>
+            <!-- 在线预警报表 -->
+            <RelativeLayout
+                android:id="@+id/report_rl_online_warn"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:layout_marginTop="20dp"
+                android:tag="report_rl_product"
+                android:gravity="center_vertical"
+                android:background="@drawable/lb_layout_selector"
+                android:focusable="true">
+
+                <ImageView
+                    android:id="@+id/iv_online_warn"
+                    android:layout_width="30dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:contentDescription="@string/app_name"
+                    android:src="@mipmap/online_warn" />
+
+                <TextView
+                    android:id="@+id/tv_online_warn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@+id/iv_online_warn"
+                    android:textSize="16dp"
+                    android:text="在线预警报表"/>
+
+            </RelativeLayout>
+            <!-- 异常信息报表 -->
+            <RelativeLayout
+                android:id="@+id/report_rl_exception"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:layout_marginTop="1dp"
+                android:tag="report_rl_product"
+                android:gravity="center_vertical"
+                android:background="@drawable/lb_layout_selector"
+                android:focusable="true">
+
+                <ImageView
+                    android:id="@+id/iv_exception"
+                    android:layout_width="30dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:contentDescription="@string/app_name"
+                    android:src="@mipmap/exception" />
+
+                <TextView
+                    android:id="@+id/tv_exception"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@+id/iv_exception"
+                    android:textSize="16dp"
+                    android:text="异常信息报表"/>
+
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</FrameLayout>

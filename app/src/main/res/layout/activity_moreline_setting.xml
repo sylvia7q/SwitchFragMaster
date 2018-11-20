@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <com.kanban.switchfragmaster.view.TitleBarView
+        android:id="@+id/avctivity_more_line_title_bar"
+        android:layout_height="40dp"
+        android:layout_width="match_parent"/>
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="3dp"
+        android:layout_marginRight="3dp"
+        android:id="@+id/avctivity_more_line_lv_more_line"
+        android:layout_below="@+id/avctivity_more_line_title_bar"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>

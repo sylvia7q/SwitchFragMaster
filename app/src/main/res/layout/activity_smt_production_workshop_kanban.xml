@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/about_bg">
+
+    <com.kanban.switchfragmaster.view.TitleBarView
+        android:id="@+id/workshop_title_bar"
+        android:layout_height="40dp"
+        android:layout_width="match_parent"/>
+    <ListView
+        android:id="@+id/workshop_lv_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1" />
+
+    <TextView
+        android:id="@+id/workshop_tv_date"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:visibility="gone"
+        android:text="2017.1.8 15:00"
+        android:textSize="18sp"
+        android:layout_marginLeft="18dp"
+        android:gravity="center_vertical"/>
+</LinearLayout>

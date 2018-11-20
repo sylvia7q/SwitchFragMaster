@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:gravity="center_vertical"
+    android:background="@color/title_bg">
+    <Button
+        android:id="@+id/title_btn_menu_back"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:background="@null"
+        android:clickable="true"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"/>
+
+    <View
+        android:id="@+id/title_ll_menu_back_divide"
+        style="@style/style_column_line_view"
+        android:background="@color/lb_black"
+        android:layout_toRightOf="@+id/title_btn_menu_back"
+        android:layout_centerVertical="true"
+        android:visibility="gone"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"/>
+    <TextView
+        android:id="@+id/title_tv_left"
+        android:layout_height="40dp"
+        android:layout_width="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@+id/title_ll_menu_back_divide"
+        android:layout_marginLeft="10dp"
+        android:gravity="center_vertical"
+        android:textColor="@color/lb_whites"
+        android:textSize="18sp"/>
+    <TextView
+        android:id="@+id/title_tv_center"
+        android:layout_height="40dp"
+        android:layout_width="wrap_content"
+        android:layout_centerInParent="true"
+        android:gravity="center_vertical"
+        android:textSize="18sp"
+        android:textColor="@color/lb_whites"
+        android:textStyle="bold"/>
+    <Button
+        android:id="@+id/title_btn_right"
+        android:layout_height="30dp"
+        android:layout_width="wrap_content"
+        android:layout_alignParentRight="true"
+        android:gravity="center_vertical"
+        android:background="@null"
+        android:layout_centerVertical="true"
+        android:textColor="@color/lb_whites"/>
+
+</RelativeLayout>
